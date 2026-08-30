@@ -1,0 +1,13 @@
+# Gerado pelo build-preview.js — não faz parte do site
+preview.html
+
+# A arte do hero antes de o texto ser removido dela, guardada localmente
+assets/img/cidade-ypcloud-com-texto.bak.png
+
+# Configuração local do ambiente de desenvolvimento
+.claude/
+
+# Sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DaVez — a fila de entregadores organizada</title>
+<meta name="description" content="DaVez é o aplicativo da YP Cloud para organizar a fila de entregadores de quem tem frota própria: check-in, rodízio com registro e despacho do próximo da vez.">
+<meta name="theme-color" content="#07090F">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="YP Cloud">
+<meta property="og:title" content="DaVez — a fila de entregadores organizada">
+<meta property="og:description" content="Check-in, rodízio com registro e despacho do próximo da vez, no celular e na tela do balcão.">
+<!-- TROCAR: url canônica e imagem de compartilhamento -->
+<meta property="og:url" content="https://ypcloud.com.br/davez.html">
+<meta property="og:image" content="https://ypcloud.com.br/assets/img/og-davez.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ypcloud.com.br/davez.html">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="assets/img/favicon.svg" color="#4DA3FF">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "DaVez",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "iOS, Android, Web",
+  "description": "Aplicativo para organizar a fila de entregadores em negócios com frota própria.",
+  "publisher": { "@type": "Organization", "name": "YP Cloud", "url": "https://ypcloud.com.br/" }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#abertura">Pular para o conteúdo</a>
+
+<div class="shell">
+
+  <!-- ================= COLUNA-ÍNDICE ================= -->
+  <aside class="rail">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/img/logo-yp.svg" width="120" height="120" alt="">
+      <span class="brand__texto">YP Cloud<span>Startup de tecnologia</span></span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-indice">
+      <span class="nav-toggle__bars"><span></span><span></span><span></span></span>
+      Índice
+    </button>
+
+    <nav aria-label="Seções desta página">
+      <ul class="index" id="menu-indice">
+        <li><a href="#abertura"><i>01</i> DaVez</a></li>
+        <li><a href="#problema"><i>02</i> O problema</a></li>
+        <li><a href="#funciona"><i>03</i> Como funciona</a></li>
+        <li><a href="#para-quem"><i>04</i> Para quem é</a></li>
+        <li><a href="#por-dentro"><i>05</i> Por dentro</a></li>
+        <li><a href="#perguntas"><i>06</i> Perguntas</a></li>
+        <li><a href="index.html#contato"><i>07</i> Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="rail-note">
+      <b>Onde estamos</b>
+      Florianópolis, Santa Catarina.
+      <a href="index.html#contato">Falar com a gente</a>
+    </div>
+  </aside>
+
+  <!-- ================= CONTEÚDO ================= -->
+  <div class="main">
+
+    <div class="topbar">
+      <span class="topbar__meta">Um produto YP Cloud</span>
+      <a class="btn btn--primary" href="index.html#contato">
+        Pedir uma demonstração
+        <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <main>
+
+      <!-- ---------- 01 ABERTURA ---------- -->
+      <section class="opening" id="abertura">
+        <p class="eyebrow eyebrow--green">Aplicativo</p>
+        <h1 class="display">De quem é <b>a vez</b>, agora.</h1>
+
+        <div class="opening__cols">
+          <div>
+            <p class="lead">Uma fila só, na tela do balcão e no celular de cada entregador ao mesmo tempo. Quem chegou primeiro sai primeiro, e o registro fica lá para provar.</p>
+            <div class="actions opening__actions">
+              <a class="btn btn--primary" href="index.html#contato">
+                Pedir demonstração
+                <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="#funciona">Ver como funciona</a>
+            </div>
+          </div>
+
+          <figure style="margin:0">
+            <img class="tela tela--app" src="assets/img/davez-app.jpg" width="620" height="1342"
+                 alt="Tela do aplicativo mostrando a posição do entregador na fila e quem é o próximo" loading="lazy">
+          </figure>
+        </div>
+      </section>
+
+      <!-- ---------- A TELA DA LOJA ---------- -->
+      <section class="section" aria-label="O painel da loja">
+        <figure class="tela-larga reveal" style="margin:0">
+          <img class="tela" src="assets/img/davez-painel.jpg" width="1600" height="1000"
+               alt="Painel da loja com a fila do dia: quem é o próximo, quem aguarda e quem está em entrega" loading="lazy">
+          <figcaption>O painel da loja — a fila que todo mundo enxerga igual</figcaption>
+        </figure>
+      </section>
+
+      <!-- ---------- 02 O PROBLEMA ---------- -->
+      <section class="section" id="problema">
+        <div class="section-head reveal">
+          <p class="eyebrow">O problema</p>
+          <h2 class="h2">Todo mundo acha que é a <b>sua vez</b>.</h2>
+          <p class="lead">Quem tem frota própria conhece a cena: o movimento aperta, a ordem de chegada some da cabeça de todo mundo e o balcão vira tribunal. O prejuízo não é só o atrito — é o pedido parado esperando alguém decidir quem sai.</p>
+        </div>
+
+        <div class="cards cards--quatro reveal" data-delay="80">
+          <article>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <h3>A fila mora no caderno</h3>
+            <p>Ou num grupo de mensagem, ou na memória de quem está no balcão. Quando troca o turno, a ordem se perde junto.</p>
+          </article>
+
+          <article>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3v9l5 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+            <h3>O pedido espera a discussão</h3>
+            <p>Cada minuto decidindo quem sai é um minuto de comida esfriando e de cliente olhando o relógio.</p>
+          </article>
+
+          <article>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 14l-4 4M15 14l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="12" cy="8" r="4.5" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+            <h3>Entregador desconfia do rodízio</h3>
+            <p>Sem registro, "furaram a fila" é sempre uma possibilidade. E entregador que se sente passado para trás vai embora.</p>
+          </article>
+
+          <article>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 19V5m16 14V5M4 19h16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M8 15v-4m4 4V8m4 7v-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <h3>Ninguém sabe o que aconteceu</h3>
+            <p>No fim do dia não sobra registro de quem saiu, quando e para onde. O que ficou combinado vira conversa difícil depois.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ---------- 03 COMO FUNCIONA (sequência real) ---------- -->
+      <section class="section" id="funciona">
+        <div class="section-head reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2 class="h2">Quatro momentos, o dia <b>inteiro</b>.</h2>
+          <p class="lead">O ciclo se repete a cada corrida. Ninguém precisa avisar ninguém: a fila anda sozinha.</p>
+        </div>
+
+        <div class="steps reveal" data-delay="80">
+          <article class="step">
+            <span class="step__n">01</span>
+            <div>
+              <h3>Chegou, entrou na fila</h3>
+              <p>O entregador faz check-in pelo celular ao chegar. A posição é a hora de entrada — sem interpretação, sem lista paralela.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step__n">02</span>
+            <div>
+              <h3>Todo mundo vê a mesma ordem</h3>
+              <p>A fila aparece igual na tela do balcão e no celular de cada um. Quem é o próximo não é opinião de ninguém.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step__n">03</span>
+            <div>
+              <h3>Saiu o pedido, saiu o da vez</h3>
+              <p>O balcão despacha o primeiro da fila com um toque. Ele sai da fila e passa a aparecer como quem está na rua.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step__n">04</span>
+            <div>
+              <h3>Voltou, entrou no fim</h3>
+              <p>Ao encerrar a entrega, ele volta para o fim da fila com horário registrado. O rodízio se mantém justo sem ninguém controlar.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ---------- 04 PARA QUEM É ---------- -->
+      <section class="section" id="para-quem">
+        <div class="section-head reveal">
+          <p class="eyebrow">Para quem é</p>
+          <h2 class="h2">Quem tem <b>frota própria</b>.</h2>
+          <p class="lead">Se os entregadores são seus — fixos ou agregados — e a ordem de saída é decidida ali no balcão, o DaVez foi feito para a sua operação.</p>
+        </div>
+
+        <div class="rows reveal" data-delay="60">
+          <article class="row">
+            <h3>Restaurantes</h3>
+            <p>Pizzaria, hamburgueria, comida japonesa, marmitaria: onde o pico de pedido e a fila de moto acontecem na mesma meia hora.</p>
+            <span class="row__meta">Delivery próprio</span>
+          </article>
+
+          <article class="row">
+            <h3>Varejo de bairro</h3>
+            <p>Farmácia, mercado, distribuidora de bebidas. Menos volume de uma vez, mas a mesma pergunta o dia todo: quem leva?</p>
+            <span class="row__meta">Entrega local</span>
+          </article>
+
+          <article class="row">
+            <h3>Quem agrega entregadores</h3>
+            <p>Operações que reúnem entregadores para atender vários comércios e precisam distribuir corrida com critério defensável.</p>
+            <span class="row__meta">Vários pontos de saída</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- ---------- POR DENTRO ---------- -->
+      <section class="section" id="por-dentro">
+        <div class="section-head reveal">
+          <p class="eyebrow">Por dentro</p>
+          <h2 class="h2">O sistema <b>por inteiro</b>.</h2>
+          <p class="lead">Capturas do DaVez rodando. A loja e os entregadores das telas são fictícios — nenhum dado de cliente aparece aqui.</p>
+        </div>
+
+        <p class="galeria-titulo">O painel da loja</p>
+        <ul class="galeria galeria--painel reveal" data-delay="60">
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-01-chamada.jpg" width="1500" height="938" loading="lazy"
+                   alt="Aba Chamada com a lista do turno aberta, contadores de check-in e o botão de gerar código individual">
+              <figcaption><b>Chamada</b>Abre a lista do turno, conta os check-ins e emite o código de cada entregador.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-02-fila-da-vez.jpg" width="1500" height="938" loading="lazy"
+                   alt="Aba Da vez com a fila numerada, quem está despachado e os botões de subir e descer">
+              <figcaption><b>Fila “Da vez”</b>Quem é o próximo, quem aguarda e quem está na rua — na mesma ordem para todo mundo.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-03-ranking.jpg" width="1500" height="938" loading="lazy"
+                   alt="Ranking de motoboys classificado por entregas despachadas, com filtro por período">
+              <figcaption><b>Ranking</b>Classificação por entregas despachadas, com filtro de período e exportação em PDF.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-04-relatorio-turno.jpg" width="1500" height="938" loading="lazy"
+                   alt="Relatório do turno com horário de pico, total de entregas, espera típica e gráfico por hora">
+              <figcaption><b>Relatório do turno</b>Horário de pico, total de entregas e quanto o entregador esperou — mediana e pior caso.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-05-modos-de-entrada.jpg" width="1500" height="938" loading="lazy"
+                   alt="Aba Entrada com os três modos de acesso do motoboy e qual está ativo">
+              <figcaption><b>Modo de entrada</b>Como o entregador entra na fila: código individual, QR rápido ou um código único da loja.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-06-modo-automatico.jpg" width="1500" height="938" loading="lazy"
+                   alt="Aba Automático explicando o despacho por GPS e as travas contra despacho errado">
+              <figcaption><b>Despacho automático</b>O sistema percebe pelo GPS que o entregador saiu e despacha sozinho. Desligado na captura.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/painel-07-qr-da-loja.jpg" width="1500" height="938" loading="lazy"
+                   alt="Aba QR Code com o código permanente da loja pronto para imprimir">
+              <figcaption><b>QR da loja</b>O código que fica impresso na parede. Abre direto a tela de check-in.</figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <p class="galeria-titulo">O aplicativo do entregador</p>
+        <ul class="galeria galeria--app reveal" data-delay="60">
+          <li>
+            <figure>
+              <img src="assets/img/telas/app-01-check-in.jpg" width="620" height="1342" loading="lazy"
+                   alt="Tela de check-in do aplicativo, com campos de nome e código individual">
+              <figcaption><b>Check-in</b>Nome e código.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/app-02-fila-do-dia.jpg" width="620" height="1342" loading="lazy"
+                   alt="Página completa do aplicativo com as instruções e os recursos disponíveis ao entregador">
+              <figcaption><b>A página</b>Tudo que ele vê.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/app-03-preenchido.jpg" width="620" height="1342" loading="lazy"
+                   alt="Formulário de check-in preenchido, pronto para envio">
+              <figcaption><b>Preenchido</b>Pronto para entrar.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/app-04-confirmado.jpg" width="620" height="1342" loading="lazy"
+                   alt="Confirmação de que o check-in foi registrado">
+              <figcaption><b>Confirmado</b>Entrou na fila.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/telas/app-05-minha-vez.jpg" width="620" height="1342" loading="lazy"
+                   alt="Tela mostrando a posição do entregador na fila e quem é o próximo a sair">
+              <figcaption><b>Minha vez</b>A posição e quem vem antes.</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ---------- 06 PERGUNTAS ---------- -->
+      <section class="section" id="perguntas">
+        <div class="section-head reveal">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2 class="h2">Antes de pedir a demonstração.</h2>
+        </div>
+
+        <div class="faq reveal" data-delay="60">
+          <details>
+            <summary>O entregador precisa instalar alguma coisa?</summary>
+            <p>Ele acessa a fila pelo celular. Na demonstração a gente mostra como fica na mão dele e como fica na tela do balcão.</p>
+          </details>
+          <details>
+            <summary>E se o celular do entregador ficar sem bateria ou sem internet?</summary>
+            <p>O balcão continua enxergando a fila inteira e pode mover ou despachar qualquer entregador. O aplicativo dele é uma conveniência, não uma dependência.</p>
+          </details>
+          <details>
+            <summary>Funciona com entregador fixo e agregado ao mesmo tempo?</summary>
+            <p>Sim. Os dois entram na mesma fila. As regras de rodízio são combinadas com você na configuração.</p>
+          </details>
+          <details>
+            <summary>Preciso trocar o sistema de pedidos que já uso?</summary>
+            <p>Não. O DaVez cuida da fila e do despacho — ele convive com o seu sistema de pedidos atual.</p>
+          </details>
+          <details>
+            <summary>Serve para mais de uma loja?</summary>
+            <p>Sim. Cada ponto de saída tem a própria fila. Como isso fica organizado depende do seu caso, e é parte da conversa de configuração.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ---------- FECHAMENTO ---------- -->
+      <section class="section">
+        <div class="closer reveal">
+          <p class="eyebrow eyebrow--green">Próximo passo</p>
+          <h2 class="h2">Veja a sua fila rodando <b>no DaVez</b>.</h2>
+          <p class="lead">Marque uma demonstração e a gente mostra com a sua operação na tela, do jeito que ela funciona hoje.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="index.html#contato">
+              Pedir demonstração
+              <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="index.html#produtos">Ver todos os produtos</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="foot">
+      <span>YP Cloud © <span data-year>2026</span> · Florianópolis, Brasil</span>
+      <span class="foot__links">
+        <a href="index.html">Início</a>
+        <a href="index.html#produtos">Produtos</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="https://www.instagram.com/ypcloud_/" target="_blank" rel="noopener">Instagram</a>
+      </span>
+    </footer>
+
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
